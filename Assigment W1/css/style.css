@@ -14,7 +14,7 @@ body > a {    /* Anchor to main content */
 /* ========== HEADER ========== */
 
 header {
-  background-color: #36521B;;
+  background-color: #36521B;
 }
 
 header img {
@@ -32,6 +32,7 @@ h1 {
 nav {
   display: inline-block;
   width: 80%;
+  vertical-align: top;
 }
 
 /* ----- Navigation Menu ----- */
@@ -48,6 +49,8 @@ nav ul {
 nav a{
   color: #9FF04F;
   text-decoration-line: none;
+  border: #9FF04F solid 1px;
+  padding: 2px;
 }
 
 /* ========== MAIN ========== */
@@ -56,10 +59,24 @@ main {
   background-color: rgb(240, 224, 79, .7);
   font-size: 20px;
   padding: 2px 10px;
-  text-align: justify
+  text-align: left;
+  min-height: 50vh;
 }
 
-/* ----- Images Grid ----- */
+main:target { /* Applies a boder when using the Skip button */
+  outline: 4px solid #36521B;
+  background-color: #f0e04f;
+}
+
+p {
+  line-height: 2;
+}
+
+main a{
+  color: #df5049;
+}
+
+/* ----- Grid Images ----- */
 
 .grid-container {
   display: grid;
@@ -74,18 +91,10 @@ main {
 }
 
 
-.flex-container {     /* Images Flex */
+.flex-container {     /* Flex Images */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-p {
-  line-height: 1.5;
-}
-
-main a{
-  color: #df5049;
 }
 
 /* ========== FOOTER ========== */
