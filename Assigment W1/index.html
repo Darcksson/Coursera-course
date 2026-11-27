@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Springtime In Michigan</title>
-  <!-- You will need to link to the CSS file -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <a href="#mainContent">Skip to Main Content</a>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="neighborhood.html">Neighborhood Walks</a></li>
-        <li><a href="parks.html">Walks in the Park</a></li>
-      </ul>
-    </nav>
-    <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue.">
-    <h1>Springtime in Michigan</h1>
-  </header>
-  <main id="mainContent">
-    <p>Springtime in <a href="https://www.michigan.org/city/ann-arbor">Ann Arbor</a> is a beautiful time. Even though
-      it can be chilly at times, it is nice to walk my dog Bacon. This site includes some pictures I have taken on
-      these walks. </p>
+    <header class="container">
+        <nav class="head-nav">
+          <a class="skip" href="#main">Skip to Main<br>Content</a>
+            <a class="logo" href="index.html">Mexico City<br>Museums</a>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="templo_mayor.html">Templo Mayor Museum</a></li>
+                <li><a href="nat_history.html">National History Museum</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container" id="main">
+        <aside class="inner-menu">
+          <div class="menu-container">
+            <ul>
+                <li><a href="#hero" class="nav-link">Introduction</a></li>
+                <li><a href="#temp-may" class="nav-link">Templo Mayor Museum</a></li>
+                <li><a href="#nat-his" class="nav-link">National History Museum</a></li>
+            </ul>
+          </div>
+        </aside>
+        
+        <section class="hero">
+          <div class="teaser">
+            <a title="Timothy Neesam, CC BY-SA 4.0, via Wikimedia Commons"><img id="hero" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg/960px-Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail" alt="Bellas Artes Palace in Mexico City"></a>
+            <h1>Discover the History of Mexico City</h1>
+            <p>Mexico City is one of the cultural capitals of the world, home to over 150 museums that preserve centuries of art, tradition, and heritage. From ancient pre-Hispanic civilizations to the modern era, walking through its museums is the best way to understand the identity of Mexico. Explore two of its most iconic historical landmarks below.</p>
+          </div>
+        </section>
 
-    <p>Sometimes we walk around the neighborhood, other times we make it to the woods. Ann Arbor also has some
-      beautiful lakes and rivers including the <a
-        href="https://www.annarbor.org/things-to-do/recreation-outdoors/huron-river/">Huron River Watertrail</a> and
-      the <a href="https://www.a2gov.org/departments/Parks-Recreation/parks-places/argo/pages/default.aspx">Argo Park
-        Cascades</a>.</p>
+        <section class="temp-may">
+          <div class="teaser">
+            <a href="templo_mayor.html" title="Steve Cadman from London, U.K., CC BY-SA 2.0, via Wikimedia Commons"><img id="temp-may" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Model_of_Tenochtitlan.jpg/960px-Model_of_Tenochtitlan.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail" alt="Model of Tenochtitlan"></a>
+            <h2>Templo Mayor Museum</h2>
+            <p>Step into the heart of the ancient Aztec Empire. Located right next to the Zócalo, this museum showcases the archaeological ruins of the main temple of Tenochtitlan and thousands of artifacts uncovered in the center of the city.</p>
+            <a class="internal-link" href="templo_mayor.html">Templo Mayor Museum page >>></a>
+          </div>
+        </section>
 
-  </main>
-  <footer class="credit">
-    <p>This page was originally created by Colleen van Lent for the <a
-        href="https://www.coursera.org/specializations/web-design"> Web Design for Everybody</a> Specialization.
-      Specialization. Students are invited to make changes.</p>
-  </footer>
+        <section class="nat-his">
+          <div class="teaser">
+            <a href="nat_history.html" title="Sisgeo, CC BY-SA 4.0, via Wikimedia Commons"><img id="nat-his" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Chapultepec_castle_in_Mexico_city.jpg/960px-Chapultepec_castle_in_Mexico_city.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail" alt="Chapultepec castle in Mexico City"></a>
+            <h2>National History Museum</h2>
+            <p>Perched atop Chapultepec Hill, the only royal castle in North America houses a vast collection of murals, historical documents, and royal artifacts that tell the story of Mexico from the Spanish conquest to the Mexican Revolution.</p>
+            <a class="internal-link" href="nat_history.html">National History Museum page >>></a>
+          </div>
+        </section>
+    </main>
 
+    <footer class="container">
+        <nav class="foot-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="templo_mayor.html">Templo Mayor Museum</a></li>
+                <li><a href="nat_history.html">National History Museum</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
-
 </html>
