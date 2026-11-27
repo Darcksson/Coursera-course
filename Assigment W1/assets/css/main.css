@@ -1,0 +1,304 @@
+/* ========================
+        BODY
+   ======================== */
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* ----- Structural grid ----- */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    row-gap: 80px;
+    column-gap: 20px;
+}
+
+.container > * {
+    background-color: #F7ECC6;
+    grid-column: col-start / span 12;
+}
+
+/* ========================
+        CUSTOM STYLES
+   ======================== */
+
+body {
+  background: #293f50;
+  color: #000;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  color: #574E2A;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+p {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+
+/* ========================
+        HEADER
+   ======================== */
+
+header {
+    margin-bottom: 80px;
+    border: 1px solid #F7ECC6;
+    border-radius: 5px;
+}
+
+.head-nav {
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    width: 100%;
+}
+
+.head-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.logo {
+    border-top: 4px solid #293f50;
+    border-radius: 5px;
+    float: right;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+/* ----- Skip link ----- */
+
+.skip {
+    border-top: 4px solid #293f50;
+    border-radius: 5px;
+    float: left;
+    text-align: left;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -500px;
+}
+
+.skip:focus {
+  top: 4px;
+}
+
+/* ========================
+        NAVIGATION MENU
+   ======================== */
+
+nav ul {
+    list-style: none;
+}
+
+nav li{
+    margin: 10px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #293f50;
+    /* border: 1px solid green; */
+}
+
+.head-nav a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ----- Changing the size and color on hover and focus ----- */
+
+.head-nav a:hover {
+  color: #574E2A;
+  font-size: 22px;
+}
+
+.head-nav a:focus {
+  color: #574E2A;
+  font-size: 22px;
+}
+
+/* ----- Changing the color, box size and background on the actual page ----- */
+
+.head-nav a.active {
+  color: #F7ECC6;
+  font-size: 22px;
+  border: 2px solid #293f50;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #293f50;
+}
+
+/* ========================
+        HOME
+   ======================== */
+
+.inner-menu{
+    grid-column: col-start / span 3;
+    grid-row: 1 / 4;
+}
+
+.menu-container{
+    width: 21.3%;
+    position: fixed;
+}
+
+.hero {
+    grid-column: col-start 4 / span 9;
+}
+
+.temp-may {
+    grid-column: col-start 4 / span 9;
+}
+
+.nat-his {
+    grid-column: col-start 4 / span 9;
+}
+
+.teaser {
+  margin-top: 0;
+  padding: 22px 5px;
+  text-align: center;
+}
+
+.teaser img {
+  border: 5px solid #574E2A;
+  border-radius: 20%;
+  padding: 0;
+  height: 130px;
+  width: 200px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+.teaser a.internal-link {
+  color: #574E2A;
+  text-decoration: none;
+  float: right;
+  margin: 5px 2px;
+}
+
+.teaser a.internal-link:hover {
+  color: #293f50;
+  font-size: 20px;
+}
+
+/* ========================
+        VERTICAL MENU
+   ======================== */
+
+.menu-container > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #F7ECC6;
+}
+
+.nav-link {
+  display: block;
+  color: #574E2A;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* ----- Change the link and background color on hover ----- */
+.nav-link:hover {
+  background-color: #574E2A;
+  color: #F7ECC6;
+}
+
+/* ----- Target the actual section. 
+         Pd. Doesn't work on Mozilla :c ----- */
+
+.menu-container {    
+  scroll-target-group: auto;
+}
+
+/* ----- Changing the color, background and size of the target section ----- */
+
+.nav-link:target-current {
+  border: 5px solid #F7ECC6;
+  width: 120%;
+  background-color: #293f50;
+  color: #F7ECC6;
+}
+
+/* ========================
+        FOOTER
+   ======================== */
+
+.foot-nav {
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+    border: 1px solid #F7ECC6;
+    border-radius: 5px;
+}
+
+/* ========================
+        MUSEUMS
+   ======================== */
+
+/* ----- Structure ----- */
+
+.content {
+    grid-column: col-start / span 8;
+    padding: 5px;
+}
+
+.more-info {
+    grid-column: col-start / span 8;
+}
+
+.content-images {
+    grid-column: col-start 9 / span 4;
+    grid-row: 2 / 4;
+}
+
+/* ----- Flex Gallery ------ */
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  width: 180px;
+}
+
+div.gallery-item img {
+  border: 5px solid #574E2A;
+  border-radius: 10px;
+  padding: 2px;
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item:nth-child(odd) img {
+  border: 5px solid #293f50;
+}
+
+.more-info a {
+  color: #574E2A;
+}
